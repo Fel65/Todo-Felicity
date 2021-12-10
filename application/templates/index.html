@@ -1,11 +1,10 @@
 {% extends "layout.html" %}
 {% block body %}
 <p>
-    Here are the tasks you need to do!
+    <h2> Here are the tasks you need to do!</h2>
 </p>
 <p>{% for task in all_tasks %}<br>
    {{task.description}}<br>
 
-</p>{% endfor}
-
+</p> {% endfor %}
 {% endblock body %}

@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Todo List App - {{ title }}</title>
-    </head>
+    
+<head>
+  <script src="https://www.w3schools.com/js/myScript.js"></script>      
+<style>
+    h2 {
+  border: 1px solid red;
+  outline: 5px dotted green;
+}
+
+
+</style>
+    <title> Todo List App - {{ title }} </title>
+
+</head>
     <body>
         <navbar>
-            <a href="/">Home</a>
-            <a href="/create_task">Add New Task</a>
+            <a href="/"> Home</a>
+            <a href="/create_task">  Add New Task</a>
         </navbar>
-        <h1>
-            Todo List App - {{ title }}
+        <h1><strong>
+            Todo List App - {{ title }}</strong>
         </h1>
         {% block body %}
         {% endblock body %}
+    
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+
+
+
+    
+    
+    
+    
     </body>
-</html>
+
+ </html>
