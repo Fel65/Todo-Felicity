@@ -1,0 +1,5 @@
+
+#!/bin/bash
+source venv/bin/activate
+export DATABASE_URI=sqlite:/// CREATE_SCHEMA=true
+
